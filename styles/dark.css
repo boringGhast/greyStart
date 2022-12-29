@@ -1,0 +1,23 @@
+body {
+  background-color: #272727;
+}
+
+.searchBox {
+  background-color: #272727;
+}
+
+.searchBox:hover {
+  box-shadow: 10px 10px 27px #181818, -10px -10px 27px #2a2a2a;
+}
+
+.enginesBox {
+  background: #1113;
+}
+
+.engine {
+  background: #00000034;
+}
+
+.engine p {
+  border-top: 2px solid #ffffff22;
+}

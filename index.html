@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>灰白起始页</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/search.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style id="dark"></style>
+    <style>
+      @font-face {
+        font-family: "FZSKBXKJW";
+        src: url("./font/FZSKBXKJW.ttf") format("truetype");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sideBox">
+      <div class="toggleColor">
+        <img class="sideIcon sun" src="./images/sun.svg" style alt="" />
+        <img class="sideIcon moon" src="./images/moon.svg" style="width: 0;" alt="" />
+      </div>
+      <!-- <div class="setting">
+        <img src="./images/setting.svg" class="sideIcon" alt="" />
+      </div> -->
+    </div>
+    <div class="appLineBox">
+      <div class="searchLineBox">
+        <div class="search">
+          <div class="searchBox">
+            <div class="searchEngines" type="bing" onblur="hideEngineBox();">
+              <img src="./images/bing.svg" class="icon" alt="" />
+            </div>
+            <input
+              type="text"
+              class="searchInput font_size_16 color-primary"
+              placeholder="Type something..."
+              onfocus="this.placeholder='';hideEngineBox()"
+              onblur="this.placeholder='Type something...'"
+            />
+            <div class="searchBtn">
+              <img src="./images/search.svg" class="icon i-search" alt="" />
+            </div>
+          </div>
+          <div class="enginesBox"><div class="enginesLineBox"></div></div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="oneWord"
+      class="color-primary"
+      onclick="navigator.clipboard.writeText(this.innerText);this.style='animation: small 200ms 1;'"
+    ></div>
+    <div class="prompt">点击复制</div>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
