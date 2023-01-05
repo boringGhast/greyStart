@@ -1,3 +1,4 @@
+
 function $(ele) {
   return document.querySelector(ele);
 }
@@ -6,14 +7,15 @@ searchEngineList = {
   百度: ["./images/baidu.svg", "https://www.baidu.com/s?ie=utf-8&word="],
   bing: ["./images/bing.svg", "https://cn.bing.com/search?q="],
   google: ["./images/google.svg", "https://www.google.com/search?q="],
+  github: ["./images/github.svg","https://github.com/search?q="],
   开发者搜索: [
     "./images/kaifa.svg",
     "https://kaifa.baidu.com/searchPage?module=SEARCH&wd=",
   ],
-  火山翻译: [
-    "./images/volctrans.svg",
-    "https://translate.volcengine.com/translate?&text=",
-  ],
+//   火山翻译: [
+//     "./images/volctrans.svg",
+//     "https://translate.volcengine.com/translate?&text=",
+//   ],
 };
 
 function search() {
@@ -153,6 +155,8 @@ window.document.body.onmouseover = function (event) {
   }
   hideEngineBox();
 };
+
+
 
 // 背景函数
 function backgroundFunc() {
